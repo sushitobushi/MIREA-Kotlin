@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CameraFragment"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        app:layout_constraintBottom_toTopOf="@id/button_capture" />
+
+    <Button
+        android:id="@+id/button_capture"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:text="Сделать фото"
+        android:backgroundTint="@color/blue"
+ />
+
+    <Button
+        android:id="@+id/button_to_list"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:text="Список снимков"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/previewView" />
+
+</LinearLayout>
